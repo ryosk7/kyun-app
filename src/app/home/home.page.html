@@ -1,23 +1,23 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="middium">きゅんパラ</ion-title>
+      <ion-title size="middium">きゅんきゅんボタン</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <div [ngClass]="['heart', isPushed ? 'heart-bump' : '']"></div>
-    <div class="count-num-wrapper">
-      <p class="count-num">
-        {{ count }}
-      </p>
+    <div class="restart-wrapper">
+      <ion-icon name="refresh" size="large" (click)="restart()"></ion-icon>
+    </div>
+    <div>
+      <ion-icon name="heart" [ngClass]="['heart', isPushed ? 'heart-bump' : '']"></ion-icon>
     </div>
     <ion-button
       size="large"
       class="kyun-button"
       (click)="setCountUp()"
     >
-      きゅんする♡
+      きゅんです♡
     </ion-button>
   </div>
 </ion-content>

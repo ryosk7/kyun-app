@@ -77,14 +77,14 @@
 
   /** kyun-pink **/
   --ion-color-kyun-pink: #ffb5e3;
-  --ion-color-light-rgb: 255, 181, 227;
-  --ion-color-light-contrast: #f4f5f8;
-  --ion-color-light-contrast-rgb: 244, 245, 248;
-  --ion-color-light-shade: #ff9edb;
-  --ion-color-light-tint: #ffccec;
+  --ion-color-kyun-rgb: 255, 181, 227;
+  --ion-color-kyun-contrast: #f4f5f8;
+  --ion-color-kyun-contrast-rgb: 244, 245, 248;
+  --ion-color-kyun-shade: #ff9edb;
+  --ion-color-kyun-tint: #ffccec;
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   /*
    * Dark Colors
    * -------------------------------------------
@@ -163,7 +163,7 @@
    * -------------------------------------------
    */
 
-  .ios body {
+  .ios body.dark {
     --ion-background-color: #000000;
     --ion-background-color-rgb: 0,0,0;
 
@@ -203,7 +203,7 @@
    * -------------------------------------------
    */
 
-  .md body {
+  .md body.dark {
     --ion-background-color: #121212;
     --ion-background-color-rgb: 18,18,18;
 
