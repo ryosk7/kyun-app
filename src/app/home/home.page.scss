@@ -14,7 +14,6 @@
 }
 
 #container p {
-  font-size: 16px;
   line-height: 22px;
 
   color: #8c8c8c;
@@ -24,4 +23,52 @@
 
 #container a {
   text-decoration: none;
+}
+
+.kyun-button {
+  --background: var(--ion-color-kyun-pink);
+  --background-activated: var(--ion-color-light-shade)
+}
+
+.heart {
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  left: 50%;
+  margin-top: -45px;
+  margin-left: -50px;
+}
+.heart:before,
+.heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: -135px;
+  width: 50px;
+  height: 80px;
+  background: #f88dc8;
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin :100% 100%;
+}
+
+.heart-bump{
+  animation: pounding .5s linear infinite alternate;
+}
+
+@keyframes pounding{
+ 0%{ transform: scale(1.5); }
+ 100%{ transform: scale(1); }
+}
+
+.count-num-wrapper {
+  margin: 20px;
+  .count-num {
+    font-size: 40px;
+  }
 }

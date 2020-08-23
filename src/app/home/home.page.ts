@@ -7,6 +7,14 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  isPushed: boolean = false;
+  count: number = 0;
+
   constructor() {}
 
+  setCountUp(): number {
+    this.isPushed = true;
+    this.count = this.count + 1;
+    return this.count;
+  }
 }
