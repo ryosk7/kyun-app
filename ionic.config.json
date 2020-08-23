@@ -1,0 +1,7 @@
+{
+  "name": "kyun-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
